@@ -1,1 +1,6 @@
+/Backend/WebApi/bin/
+/Backend/WebApi/obj/
 /Backend/Database/bin/
+/Backend/Database/obj/
+/Backend/Entities/bin/
+/Backend/Entities/obj/

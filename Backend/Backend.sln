@@ -4,10 +4,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{C01A5041-C457-4042-A3F6-5B3C12B17FBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
