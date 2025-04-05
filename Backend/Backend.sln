@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C486629A-4195-46D2-B4E5-7F1E4851D477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6A7112-4B95-4690-80AD-BAB9F946F0BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
