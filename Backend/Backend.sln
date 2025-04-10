@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{C01A5041-C457-4042-A3F6-5B3C12B17FBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTOs\DTOs.csproj", "{34B36522-FA77-4389-99FC-BCAD66ADFC59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,10 @@ Global
 		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C01A5041-C457-4042-A3F6-5B3C12B17FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B36522-FA77-4389-99FC-BCAD66ADFC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B36522-FA77-4389-99FC-BCAD66ADFC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B36522-FA77-4389-99FC-BCAD66ADFC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B36522-FA77-4389-99FC-BCAD66ADFC59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C486629A-4195-46D2-B4E5-7F1E4851D477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

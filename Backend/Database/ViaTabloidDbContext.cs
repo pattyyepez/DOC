@@ -17,7 +17,7 @@ namespace Database
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source=VIATAB.db");
+                optionsBuilder.UseSqlite("Data Source=C:\\Users\\domin\\OneDrive\\Desktop\\bookies_and_materials\\semester_4\\DOC\\DOC\\Backend\\Database\\VIATAB.db");
             }
         }
 

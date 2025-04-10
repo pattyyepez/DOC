@@ -75,7 +75,6 @@ public class TabloidDataAccess
 
         existing.Title = updated.Title;
         existing.Content = updated.Content;
-        existing.DepartmentId = updated.DepartmentId;
 
         await _context.SaveChangesAsync();
         return existing;
