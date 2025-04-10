@@ -1,33 +1,26 @@
+using Entities;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Services;
 
 namespace WebApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/stories")]
 public class StoryController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot",
-        "Sweltering", "Scorching"
-    };
-
+    private readonly IStoryService _service;
     private readonly ILogger<StoryController> _logger;
 
-    public StoryController(ILogger<StoryController> logger)
+    public StoryController(IStoryService service, ILogger<StoryController> logger)
     {
+        _service = service;
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    [HttpGet]
+    public async Task<IActionResult> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+        List<Story> list = await _service.GetAll();
+        return Ok(list);
     }
 }

@@ -1,6 +1,9 @@
+using Entities;
+
 namespace WebApi.Services;
 
-public class IStoryService
-{
-    
+public interface IStoryService
+{ 
+    Task<List<Story>> GetAll();
+
 }
