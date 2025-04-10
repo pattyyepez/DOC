@@ -34,6 +34,16 @@ public class EfcStoryService : IStoryService
         return ToDto(await _access.GetStoryByIdAsync(id));
     }
 
+    public async Task<StoryDto> UpdateAsync(int id, UpdateStoryDto story)
+    {
+        Story temp = new Story()
+        {
+            Title = story.Title,
+            Content = story.Content,
+        };
+        return ToDto(await _access.UpdateStoryAsync(id, temp));
+    }
+
     public async Task DeleteByIdAsync(int id)
     {
         await _access.DeleteStoryAsync(id);

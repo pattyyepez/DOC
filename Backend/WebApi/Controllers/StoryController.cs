@@ -38,6 +38,12 @@ public class StoryController : ControllerBase
         return Ok(await _service.GetByIdAsync(id));
     }
     
+    [HttpPatch("{id}")]
+    public async Task<IActionResult> Update(int id, [FromBody] UpdateStoryDto story)
+    {
+        return Ok(await _service.UpdateAsync(id, story));
+    }
+    
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
