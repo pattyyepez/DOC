@@ -1,5 +1,4 @@
 using DTOs;
-using Entities;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Services;
 
@@ -31,5 +30,11 @@ public class StoryController : ControllerBase
     {
         List<StoryDto> list = await _service.GetAll();
         return Ok(list);
+    }
+    
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Get(int id)
+    {
+        return Ok(await _service.GetByIdAsync(id));
     }
 }

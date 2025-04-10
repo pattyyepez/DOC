@@ -25,33 +25,31 @@ public class EfcStoryService : IStoryService
         };
         
         temp = await _access.CreateStoryAsync(temp);
+        
+        return ToDto(temp);
+    }
 
-        StoryDto toReturn = new StoryDto()
-        {
-            Id = temp.Id,
-            Title = temp.Title,
-            Content = temp.Content,
-            CreatedAt = temp.CreatedAt,
-            DepartmentId = temp.DepartmentId,
-        };
-
-        return toReturn;
+    public async Task<StoryDto> GetByIdAsync(int id)
+    {
+        return ToDto(await _access.GetStoryByIdAsync(id));
     }
 
     public async Task<List<StoryDto>> GetAll()
     {
-        List<StoryDto> toReturn = (await _access.GetAllStoriesAsync())
-            .Select(x => new StoryDto
-            {
-                Id = x.Id,
-                Title = x.Title,
-                Content = x.Content,
-                CreatedAt = x.CreatedAt,
-                DepartmentId = x.DepartmentId,
-            })
+        return (await _access.GetAllStoriesAsync())
+            .Select(ToDto)
             .ToList();
-        return toReturn;
     }
-    
-    
+
+    private StoryDto ToDto(Story story)
+    {
+        return new StoryDto()
+        {
+            Id = story.Id,
+            Title = story.Title,
+            Content = story.Content,
+            CreatedAt = story.CreatedAt,
+            DepartmentId = story.DepartmentId,
+        };
+    }
 }
