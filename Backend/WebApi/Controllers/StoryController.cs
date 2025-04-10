@@ -16,6 +16,14 @@ public class StoryController : ControllerBase
         _service = service;
         _logger = logger;
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> Create(
+        [FromBody] Story story)
+    {
+        var response = await _service.AddAsync(story);
+        return Ok(response);
+    }
 
     [HttpGet]
     public async Task<IActionResult> Get()

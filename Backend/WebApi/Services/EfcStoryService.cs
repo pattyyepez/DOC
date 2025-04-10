@@ -1,5 +1,6 @@
 using Database;
 using Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Services;
 
@@ -12,6 +13,11 @@ public class EfcStoryService : IStoryService
     {
         _access = new TabloidDataAccess(dbContext);
         _logger = logger;
+    }
+
+    public Task<Story> AddAsync(Story story)
+    {
+        return _access.CreateStoryAsync(story);
     }
 
     public async Task<List<Story>> GetAll()
