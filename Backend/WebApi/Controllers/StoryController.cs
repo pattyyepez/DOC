@@ -37,4 +37,11 @@ public class StoryController : ControllerBase
     {
         return Ok(await _service.GetByIdAsync(id));
     }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await _service.DeleteByIdAsync(id);
+        return Ok();
+    }
 }

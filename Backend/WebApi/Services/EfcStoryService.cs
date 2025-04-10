@@ -34,6 +34,11 @@ public class EfcStoryService : IStoryService
         return ToDto(await _access.GetStoryByIdAsync(id));
     }
 
+    public async Task DeleteByIdAsync(int id)
+    {
+        await _access.DeleteStoryAsync(id);
+    }
+
     public async Task<List<StoryDto>> GetAll()
     {
         return (await _access.GetAllStoriesAsync())
