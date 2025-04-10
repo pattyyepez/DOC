@@ -3,6 +3,22 @@ using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+var corsPolicyName = "AllowFrontend";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: corsPolicyName,
+        policy =>
+        {
+            policy.WithOrigins("https://localhost:7155") // tu frontend Blazor
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -24,6 +40,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(corsPolicyName);
 
 app.UseAuthorization();
 
