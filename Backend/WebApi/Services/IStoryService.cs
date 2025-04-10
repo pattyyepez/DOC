@@ -1,10 +1,11 @@
+using DTOs;
 using Entities;
 
 namespace WebApi.Services;
 
 public interface IStoryService
 { 
-    Task<Story> AddAsync(Story story);
-    Task<List<Story>> GetAll();
+    Task<StoryDto> AddAsync(CreateStoryDto story);
+    Task<List<StoryDto>> GetAll();
 
 }

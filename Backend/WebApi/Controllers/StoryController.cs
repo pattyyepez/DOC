@@ -1,3 +1,4 @@
+using DTOs;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Services;
@@ -19,7 +20,7 @@ public class StoryController : ControllerBase
     
     [HttpPost]
     public async Task<IActionResult> Create(
-        [FromBody] Story story)
+        [FromBody] CreateStoryDto story)
     {
         var response = await _service.AddAsync(story);
         return Ok(response);
@@ -28,7 +29,7 @@ public class StoryController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        List<Story> list = await _service.GetAll();
+        List<StoryDto> list = await _service.GetAll();
         return Ok(list);
     }
 }

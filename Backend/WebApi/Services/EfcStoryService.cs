@@ -1,6 +1,6 @@
 using Database;
+using DTOs;
 using Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Services;
 
@@ -15,14 +15,42 @@ public class EfcStoryService : IStoryService
         _logger = logger;
     }
 
-    public Task<Story> AddAsync(Story story)
+    public async Task<StoryDto> AddAsync(CreateStoryDto story)
     {
-        return _access.CreateStoryAsync(story);
+        Story temp = new Story()
+        {
+            Title = story.Title,
+            Content = story.Content,
+            DepartmentId = story.DepartmentId,
+        };
+        
+        temp = await _access.CreateStoryAsync(temp);
+
+        StoryDto toReturn = new StoryDto()
+        {
+            Id = temp.Id,
+            Title = temp.Title,
+            Content = temp.Content,
+            CreatedAt = temp.CreatedAt,
+            DepartmentId = temp.DepartmentId,
+        };
+
+        return toReturn;
     }
 
-    public async Task<List<Story>> GetAll()
+    public async Task<List<StoryDto>> GetAll()
     {
-        return await _access.GetAllStoriesAsync();
+        List<StoryDto> toReturn = (await _access.GetAllStoriesAsync())
+            .Select(x => new StoryDto
+            {
+                Id = x.Id,
+                Title = x.Title,
+                Content = x.Content,
+                CreatedAt = x.CreatedAt,
+                DepartmentId = x.DepartmentId,
+            })
+            .ToList();
+        return toReturn;
     }
     
     
