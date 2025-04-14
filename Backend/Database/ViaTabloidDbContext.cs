@@ -13,14 +13,6 @@ namespace Database
 
         public ViaTabloidDbContext() { }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlite("Data Source=C:\\Users\\patty\\doc_ca\\Backend\\Database\\VIATAB.db");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Department>().HasKey(d => d.Id);
