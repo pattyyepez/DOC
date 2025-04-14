@@ -9,7 +9,7 @@ public class ViaTabloidDbContextFactory : IDesignTimeDbContextFactory<ViaTabloid
 {
     public ViaTabloidDbContext CreateDbContext(string[] args)
     {
-        Directory.SetCurrentDirectory(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\..\..")));
+        Directory.SetCurrentDirectory(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory)));
         Env.Load();
 
         var optionsBuilder = new DbContextOptionsBuilder<ViaTabloidDbContext>();
@@ -18,8 +18,8 @@ public class ViaTabloidDbContextFactory : IDesignTimeDbContextFactory<ViaTabloid
         var host = Environment.GetEnvironmentVariable("DB_HOST") ?? "localhost";
         var port = Environment.GetEnvironmentVariable("DB_PORT") ?? "5432";
         var user = Environment.GetEnvironmentVariable("DB_USER") ?? "postgres";
-        var password = Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "changeme";
-        var database = Environment.GetEnvironmentVariable("DB_NAME") ?? "yourdb";
+        var password = Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "ViaViaVia";
+        var database = Environment.GetEnvironmentVariable("DB_NAME") ?? "VIATAB";
 
         var connectionString = $"Host={host};Port={port};Username={user};Password={password};Database={database}";
 

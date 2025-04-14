@@ -4,7 +4,7 @@ using WebApi.Services;
 using DotNetEnv;
 
 
-Directory.SetCurrentDirectory(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\..\..")));
+Directory.SetCurrentDirectory(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory)));
 Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,8 +41,8 @@ builder.Services.AddDbContext<ViaTabloidDbContext>(options =>
         var host = Environment.GetEnvironmentVariable("DB_HOST") ?? "localhost";
         var port = Environment.GetEnvironmentVariable("DB_PORT") ?? "5432";
         var user = Environment.GetEnvironmentVariable("DB_USER") ?? "postgres";
-        var password = Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "changeme";
-        var database = Environment.GetEnvironmentVariable("DB_NAME") ?? "yourdb";
+        var password = Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "ViaViaVia";
+        var database = Environment.GetEnvironmentVariable("DB_NAME") ?? "VIATAB";
 
         connectionString = $"Host={host};Port={port};Username={user};Password={password};Database={database}";
     }
@@ -52,6 +52,12 @@ builder.Services.AddDbContext<ViaTabloidDbContext>(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ViaTabloidDbContext>();
+    db.Database.Migrate();
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -59,7 +65,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseCors(corsPolicyName);
 
 app.UseAuthorization();
