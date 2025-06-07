@@ -3,7 +3,7 @@ version: "3.8"
 services:
   webapi:
     build:
-      context: "C:\\Users\\patty\\Downloads\\DOC"
+      context: "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC"
       dockerfile: "Backend/WebApi/Dockerfile"
       target: "build"
     command: []
@@ -15,6 +15,6 @@ services:
     ports: []
     volumes:
     - "C:\\Users\\patty\\.nuget\\packages:/root/.nuget/packages"
-    - "C:\\Users\\patty\\Downloads\\DOC\\Backend\\WebApi:/app:rw"
-    - "C:\\Users\\patty\\Downloads\\DOC\\Backend:/src:rw"
+    - "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Backend\\WebApi:/app:rw"
+    - "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Backend:/src:rw"
     working_dir: "/app"
