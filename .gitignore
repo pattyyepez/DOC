@@ -7,7 +7,9 @@
 /Backend/DTOs/bin/
 /Backend/DTOs/obj/
 /.env
-/Backend/Blazor/bin/
-/Backend/Blazor/obj/
-/Frontend/Blazor/bin/
-/Frontend/Blazor/obj/
+/Backend/BlazorApp/bin/
+/Backend/BlazorApp/obj/
+/Backend/DTOs Frontend/bin/
+/Backend/DTOs Frontend/obj/
+/Backend/Services/bin/
+/Backend/Services/obj/
