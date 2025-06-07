@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj": {}
+    "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj": {
+    "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj",
+        "projectUniqueName": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj",
         "projectName": "DTOS",
-        "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj",
+        "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj",
         "packagesPath": "C:\\Users\\patty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\obj\\",
+        "outputPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patty\\AppData\\Roaming\\NuGet\\NuGet.Config"

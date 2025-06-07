@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Blazor\\Blazor.csproj": {}
+    "C:\\Users\\patty\\DOC\\Fronntend\\Blazor\\Blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Blazor\\Blazor.csproj": {
+    "C:\\Users\\patty\\DOC\\Fronntend\\Blazor\\Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Blazor\\Blazor.csproj",
+        "projectUniqueName": "C:\\Users\\patty\\DOC\\Fronntend\\Blazor\\Blazor.csproj",
         "projectName": "Blazor",
-        "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Blazor\\Blazor.csproj",
+        "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\Blazor\\Blazor.csproj",
         "packagesPath": "C:\\Users\\patty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Blazor\\obj\\",
+        "outputPath": "C:\\Users\\patty\\DOC\\Fronntend\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patty\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj": {
-                "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj"
+              "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj": {
+                "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj"
               },
-              "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\Services.csproj"
+              "C:\\Users\\patty\\DOC\\Fronntend\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\Services\\Services.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj": {
+    "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj",
+        "projectUniqueName": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj",
         "projectName": "DTOS",
-        "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj",
+        "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj",
         "packagesPath": "C:\\Users\\patty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\obj\\",
+        "outputPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patty\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\Services.csproj": {
+    "C:\\Users\\patty\\DOC\\Fronntend\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\patty\\DOC\\Fronntend\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\patty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\Services\\obj\\",
+        "outputPath": "C:\\Users\\patty\\DOC\\Fronntend\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patty\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -158,8 +158,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj": {
-                "projectPath": "C:\\Users\\patty\\OneDrive\\Escritorio\\DOC\\Frontend\\DTOS\\DTOS.csproj"
+              "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj": {
+                "projectPath": "C:\\Users\\patty\\DOC\\Fronntend\\DTOS\\DTOS.csproj"
               }
             }
           }
