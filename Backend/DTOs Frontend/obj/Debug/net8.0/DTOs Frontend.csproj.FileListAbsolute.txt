@@ -1,0 +1,12 @@
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\bin\Debug\net8.0\DTOs Frontend.deps.json
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\bin\Debug\net8.0\DTOs Frontend.dll
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\bin\Debug\net8.0\DTOs Frontend.pdb
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.AssemblyInfoInputs.cache
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.AssemblyInfo.cs
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.csproj.CoreCompileInputs.cache
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.sourcelink.json
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.dll
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\refint\DTOs Frontend.dll
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\DTOs Frontend.pdb
+C:\Users\patty\OneDrive\Escritorio\DOC\Backend\DTOs Frontend\obj\Debug\net8.0\ref\DTOs Frontend.dll
