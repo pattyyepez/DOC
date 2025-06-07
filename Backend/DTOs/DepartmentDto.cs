@@ -1,4 +1,4 @@
-namespace DTOS;
+namespace DTOs;
 
 public class DepartmentDto
 {

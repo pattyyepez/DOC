@@ -1,5 +1,5 @@
 using System.Net.Http.Json;
-using DTOS;
+using DTOs;
 
 namespace Services;
 
